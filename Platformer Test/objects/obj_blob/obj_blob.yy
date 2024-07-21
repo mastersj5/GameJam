@@ -1,17 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_kunai",
+  "%Name":"obj_blob",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_kunai",
+  "name":"obj_blob",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_player",
+    "path":"objects/obj_player/obj_player.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Black_Kunai14",
-    "path":"sprites/Black_Kunai14/Black_Kunai14.yy",
+    "name":"Shadow_Blob",
+    "path":"sprites/Shadow_Blob/Shadow_Blob.yy",
   },
   "spriteMaskId":null,
   "visible":true,

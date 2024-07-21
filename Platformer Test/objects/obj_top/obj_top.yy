@@ -6,8 +6,8 @@
   "name":"obj_top",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Floors_Walls",
+    "path":"folders/Objects/Floors_Walls.yy",
   },
   "parentObjectId":null,
   "persistent":false,
