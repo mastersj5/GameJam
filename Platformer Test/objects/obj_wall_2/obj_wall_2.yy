@@ -8,8 +8,8 @@
   "name":"obj_wall_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Floors_Walls",
+    "path":"folders/Objects/Floors_Walls.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",
@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Orange_Dirt_Ground",
-    "path":"sprites/Orange_Dirt_Ground/Orange_Dirt_Ground.yy",
+    "name":"Snowy_Dirt_Ground",
+    "path":"sprites/Snowy_Dirt_Ground/Snowy_Dirt_Ground.yy",
   },
   "spriteMaskId":null,
   "visible":true,
