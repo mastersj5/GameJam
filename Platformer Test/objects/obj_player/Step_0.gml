@@ -3,11 +3,15 @@ keyright = keyboard_check(ord("D"));
 keyleft = -keyboard_check(ord("A"));
 keyjump = keyboard_check_pressed(vk_space);
 keyjumplong =keyboard_check(vk_space);
+input_interact = keyboard_check_pressed(ord("F"));
+
 // Creating movement
 move = keyleft + keyright;
 hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
 //This is to add +1 movement speed when shift is pressed.
+if !global.shadow_control
+{
 if keyboard_check_pressed(vk_shift)
 {
 	movespeed += 1
@@ -98,7 +102,7 @@ if keyboard_check(vk_nokey)
 if keyboard_check(vk_escape)
 {
 	room_goto(rm_menu);
-	room_persistent = rm_game;
+	room_persistent = rm_shadow_realm;
 }
 //This is to rotate the player when he faces the other direction.
 if keyboard_check(ord("A"))
@@ -109,4 +113,30 @@ if keyboard_check(ord("D"))
 {
 	image_xscale = 1
 }
+// This is the basis of how the goblin will spawn shadow creatures
+if keyboard_check(ord("R"))
+{
+    // Check if an instance of obj_kunai already exists
+    if (!instance_exists(obj_blob))
+    {
+        var spawn_distance = 32; // Distance in front of the character
+        var spawn_x = x + lengthdir_x(spawn_distance, direction);
+        var spawn_y = y + lengthdir_y(spawn_distance, direction);
 
+        instance_create_depth(spawn_x, spawn_y, -100, obj_blob);
+    }
+}
+
+
+}
+//Textbox
+if(input_interact){//collision detect if NPC is nearby
+	
+	var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_NPC, false, false);
+	
+	if(inst != noone){
+		with(inst){//NPC runs the textbox code (dialogue with specific NPC)
+			create_textbox(text, speakers);
+		}
+	}
+}

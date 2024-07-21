@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Black_Kunai",
-    "path":"sprites/Black_Kunai/Black_Kunai.yy",
+    "name":"Black_Kunai14",
+    "path":"sprites/Black_Kunai14/Black_Kunai14.yy",
   },
   "spriteMaskId":null,
   "visible":true,
