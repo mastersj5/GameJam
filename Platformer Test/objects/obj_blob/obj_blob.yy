@@ -9,8 +9,8 @@
   "name":"obj_blob",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Beings",
+    "path":"folders/Objects/Beings.yy",
   },
   "parentObjectId":{
     "name":"obj_player",
