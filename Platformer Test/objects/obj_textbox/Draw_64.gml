@@ -20,7 +20,7 @@ draw_set_font(font);
 //Draw Name
 var c = name_text_col; //shorter var for color
 draw_set_halign(fa_center); draw_set_valign(fa_middle);
-draw_text_color(name_test_x, name_text_y, name, c, c, c, c, 1); 
+draw_text_color(name_test_x, name_text_y, speaker_name, c, c, c, c, 1); 
 draw_set_halign(fa_left); draw_set_valign(fa_top);
 
 //Draw Text

@@ -4,4 +4,5 @@ global.game_height = 360;
 
 display_set_gui_size(global.game_width, global.game_height);
 
-font_add("yoster.ttf", 12, false, false, 32, 128);
+t = font_add("yoster.ttf", 12, false, false, 32, 128);
+draw_set_font(t);

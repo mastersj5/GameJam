@@ -38,12 +38,10 @@ draw_set_font(font);
 text_height		= string_height("M");
 text_max_width	= box_width - (2*x_buffer);
 
-text[0] = "this is a text, string this! is a text string? this is a text string! this is a text string this is a text string this is a text string";
-text[1] = "this is the second page";
+text[0] = "";
 page	= 0;
-name	= "name";
+speaker_name	= "";
 voice	= snd_voice1;
 
 interact_key = ord("F"); //interact key
 
-event_perform(ev_other, ev_user1); // run user event 1

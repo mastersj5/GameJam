@@ -3,6 +3,8 @@ keyright = keyboard_check(ord("D"));
 keyleft = -keyboard_check(ord("A"));
 keyjump = keyboard_check_pressed(vk_space);
 keyjumplong =keyboard_check(vk_space);
+input_interact = keyboard_check_pressed(ord("F"));
+
 // Creating movement
 move = keyleft + keyright;
 hsp = move * movespeed;
@@ -110,3 +112,14 @@ if keyboard_check(ord("D"))
 	image_xscale = 1
 }
 
+//Textbox
+if(input_interact){//collision detect if NPC is nearby
+	
+	var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_NPC, false, false);
+	
+	if(inst != noone){
+		with(inst){//NPC runs the textbox code (dialogue with specific NPC)
+			create_textbox(text, speakers);
+		}
+	}
+}

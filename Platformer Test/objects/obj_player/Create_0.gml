@@ -8,3 +8,9 @@ movespeed = 2;
 //This is for the player animation
 image_speed = 3;
 
+portrait_index = 1; //shadow goblin
+voice = snd_voice1;
+speaker_name = "Player";
+//text = [];
+
+radius = 16;//collision with other NPCs

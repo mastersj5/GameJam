@@ -9,10 +9,13 @@
   "name":"obj_goblin",
   "overriddenProperties":[],
   "parent":{
-    "name":"Beings",
-    "path":"folders/Objects/Beings.yy",
+    "name":"Characters",
+    "path":"folders/Objects/Beings/Characters.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_NPC",
+    "path":"objects/par_NPC/par_NPC.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
