@@ -12,7 +12,6 @@ if keyboard_check_pressed(ord("Y"))
 	global.shadow_control = !global.shadow_control
 }
 
-
 if global.shadow_control
 {
 	if keyboard_check_pressed(vk_shift)

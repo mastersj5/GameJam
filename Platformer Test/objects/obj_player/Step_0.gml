@@ -127,7 +127,6 @@ if keyboard_check(ord("R"))
     }
 }
 
-
 }
 //Textbox
 if(input_interact){//collision detect if NPC is nearby

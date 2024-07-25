@@ -1,0 +1,1 @@
+t = obj_player
