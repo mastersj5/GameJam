@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_floor_2",
+  "eventList":[],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_floor_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Floors_Walls",
     "path":"folders/Objects/Floors_Walls.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_floor",
+    "path":"objects/obj_floor/obj_floor.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Shadow_Ground",
-    "path":"sprites/Shadow_Ground/Shadow_Ground.yy",
+    "name":"Snowy_Dirt_Ground",
+    "path":"sprites/Snowy_Dirt_Ground/Snowy_Dirt_Ground.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,103 +1,107 @@
+//Horizontal Collision Check and Movement
+if (place_meeting(x + hsp, y, obj_floor)) {
+    while (!place_meeting(x + sign(hsp), y, obj_floor)) {
+        x += sign(hsp); 
+    }
+    hsp = 0; // Stop movement upon collision
+} else {
+    x += hsp; // Move if no collision
+}
+// Vertical Movement & Collision
+if (place_meeting(x, y + vsp, obj_floor)) {
+    while (!place_meeting(x, y + sign(vsp), obj_floor)) {
+        y += sign(vsp); // Nudge until just before the collision
+    }
+    vsp = 0; // Stop vertical movement upon collision
+} else {
+    y += vsp; // Move vertically if no collision
+}
+
+
+if (vsp < 10) vsp += grav;
+
+if global.shadow_control
+{
+	movespeed = 0;
+}
+//This is checking if a shadow summon is in the room and creating a condition for all of the movement
+if !global.shadow_control
+{
 //These are more variables for my player movement
 keyright = keyboard_check(ord("D"));
 keyleft = -keyboard_check(ord("A"));
 keyjump = keyboard_check_pressed(vk_space);
 keyjumplong =keyboard_check(vk_space);
 input_interact = keyboard_check_pressed(ord("F"));
-
-// Creating movement
+//Redefining movespeed when we switch back
 move = keyleft + keyright;
 hsp = move * movespeed;
-if (vsp < 10) vsp += grav;
-//This is to add +1 movement speed when shift is pressed.
-if !global.shadow_control
+if keyboard_check(vk_nokey)
 {
+	movespeed = 2;
+}
+//This increases player movement speed when shift is being pressed
 if keyboard_check_pressed(vk_shift)
 {
-	movespeed += 1
+	movespeed += 1;
 }
 //This is to stop the sprint function when shift is released.
 if keyboard_check_released(vk_shift)
 {
-	movespeed = 2
+	movespeed = 2;
 }
 // This is checking for a floor below us as long as that floor is obj_wall.
-if place_meeting(x, y + 2, obj_wall) {
+if place_meeting(x, y + 2, obj_floor) {
     vsp = keyjump * -jumpspeed;
 }
 //This is creating the long jump by allowing us to control our jump based on when we release the spacebar.
 if (vsp < 0) && (!keyjumplong) vsp = max(vsp, 0);
-// Horizontal collision checking
-if (hsp != 0) 
-{
-    if (!place_meeting(x + hsp, y, obj_wall)) 
-    {
-        x += hsp;
-    } else 
-  {
-        // Handle collision, for example, stop movement
-        while (!place_meeting(x + sign(hsp), y, obj_wall)) 
-		{
-            x += sign(hsp);
-        }
-        hsp = 0;
-  }
-}
-// Vertical collision checking
-if (vsp != 0) 
-{
-    if (!place_meeting(x, y + vsp, obj_wall)) 
-	{
-        y += vsp;
-    } else 
-  {
-        // Handle collision, for example, stop movement
-        while (!place_meeting(x, y + sign(vsp), obj_wall)) 
-		{
-            y += sign(vsp);
-        }
-        vsp = 0;
-  }
-}
+
 //This is for player animation
 ///This is to begin the animation when a key is being pressed
-if keyboard_check(ord("D"))
-{
-	image_speed = hsp / 3;
-	sprite_index = Player_Sprite_Walking;
-}
-if keyboard_check(ord("A"))
-{
-	image_speed = hsp / 3;
-	sprite_index = Player_Sprite_Walking;
-}
-//This is to start the animation for the running function.
-if keyboard_check(vk_shift) && keyboard_check(ord("D"))
-{
-	image_speed = 2
-    sprite_index = Player_Sprite_Running;
-}
-else if keyboard_check_released(ord("D"))
-{
-	image_speed = 1;
-	sprite_index = Player_Sprite_Idle;
-}
-if keyboard_check(vk_shift) && keyboard_check(ord("A"))
-{
-	image_speed = 2
-    sprite_index = Player_Sprite_Running;
-}
-else if keyboard_check_released(ord("A"))
-{
-	image_speed = 1;
-	sprite_index = Player_Sprite_Idle;
-}
 //This is making sure that when nothing is being pressed the animation goes back to idle.
 if keyboard_check(vk_nokey)
 {
 	image_speed = 1;
 	sprite_index = Player_Sprite_Idle;
 }
+if keyboard_check(ord("D")) && keyboard_check(ord("A"))
+{
+	image_speed = 1;
+	sprite_index = Player_Sprite_Idle;
+}
+else if keyboard_check(ord("D"))
+{
+	image_speed = hsp / 3;
+	sprite_index = Player_Sprite_Walking;
+}
+else if keyboard_check(ord("A"))
+{
+	image_speed = hsp / 3;
+	sprite_index = Player_Sprite_Walking;
+}
+//This is to start the animation for the running function.
+if keyboard_check(vk_shift) && keyboard_check(ord("D")&& !keyboard_check(ord("A")))
+{
+	image_speed = 2
+    sprite_index = Player_Sprite_Running;
+}
+if keyboard_check_released(ord("D"))
+{
+	image_speed = 1;
+	sprite_index = Player_Sprite_Idle;
+}
+if keyboard_check(vk_shift) && keyboard_check(ord("A")&& !keyboard_check(ord("D")))
+{
+	image_speed = 2
+    sprite_index = Player_Sprite_Running;
+}
+if keyboard_check_released(ord("A"))
+{
+	image_speed = 1;
+	sprite_index = Player_Sprite_Idle;
+}
+
 //This is an event to bring up the menu when the player hits excape
 if keyboard_check(vk_escape)
 {
@@ -116,7 +120,7 @@ if keyboard_check(ord("D"))
 // This is the basis of how the goblin will spawn shadow creatures
 if keyboard_check(ord("R"))
 {
-    // Check if an instance of obj_kunai already exists
+    // Check if an instance of obj_blob already exists
     if (!instance_exists(obj_blob))
     {
         var spawn_distance = 32; // Distance in front of the character
@@ -139,3 +143,7 @@ if(input_interact){//collision detect if NPC is nearby
 		}
 	}
 }
+
+// Creating movement
+move = keyleft + keyright;
+hsp = move * movespeed;
