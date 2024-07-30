@@ -12,13 +12,13 @@ if (vsp < 10) vsp += grav;
 // Vertical collision checking
 if (vsp != 0) 
 {
-    if (!place_meeting(x, y + vsp, obj_wall)) 
+    if (!place_meeting(x, y + vsp, obj_floor)) 
 	{
         y += vsp;
     } else 
   {
         // Handle collision, for example, stop movement
-        while (!place_meeting(x, y + sign(vsp), obj_wall)) 
+        while (!place_meeting(x, y + sign(vsp), obj_floor)) 
 		{
             y += sign(vsp);
         }
