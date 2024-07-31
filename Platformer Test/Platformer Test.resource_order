@@ -3,6 +3,7 @@
     {"name":"Enemies","order":2,"path":"folders/Objects/Beings/Enemies.yy",},
     {"name":"Buttons","order":2,"path":"folders/Objects/Meta/Buttons.yy",},
     {"name":"Enemies","order":1,"path":"folders/Scripts/Enemies.yy",},
+    {"name":"Dialogue","order":1,"path":"folders/Objects/Meta/Dialogue.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"game","order":1,"path":"objects/game/game.yy",},
@@ -24,5 +25,13 @@
     {"name":"Shadow_Realm_Background__Blurred_","order":6,"path":"sprites/Shadow_Realm_Background__Blurred_/Shadow_Realm_Background__Blurred_.yy",},
     {"name":"Shadow_Realm_Background","order":4,"path":"sprites/Shadow_Realm_Background/Shadow_Realm_Background.yy",},
     {"name":"Shadow_Realm_Background21","order":2,"path":"sprites/Shadow_Realm_Background21/Shadow_Realm_Background21.yy",},
+    {"name":"obj_DialogBase","order":2,"path":"objects/obj_DialogBase/obj_DialogBase.yy",},
+    {"name":"obj_DialogSampleA_1","order":4,"path":"objects/obj_DialogSampleA_1/obj_DialogSampleA_1.yy",},
+    {"name":"obj_DialogSampleA","order":1,"path":"objects/obj_DialogSampleA/obj_DialogSampleA.yy",},
+    {"name":"obj_DialogShadowTutorial","order":3,"path":"objects/obj_DialogShadowTutorial/obj_DialogShadowTutorial.yy",},
+    {"name":"obj_shadow_debris","order":1,"path":"objects/obj_shadow_debris/obj_shadow_debris.yy",},
+    {"name":"Dialogue","order":1,"path":"scripts/Dialogue/Dialogue.yy",},
+    {"name":"scr_textbox_functions","order":2,"path":"scripts/scr_textbox_functions/scr_textbox_functions.yy",},
+    {"name":"Shadow_Debris","order":1,"path":"sprites/Shadow_Debris/Shadow_Debris.yy",},
   ],
 }

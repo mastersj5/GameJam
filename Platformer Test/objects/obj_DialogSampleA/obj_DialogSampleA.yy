@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_goblin",
+  "%Name":"obj_DialogSampleA",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_goblin",
+  "name":"obj_DialogSampleA",
   "overriddenProperties":[],
   "parent":{
-    "name":"Characters",
-    "path":"folders/Objects/Beings/Characters.yy",
+    "name":"Dialogue",
+    "path":"folders/Objects/Meta/Dialogue.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_NPC",
-    "path":"objects/obj_par_NPC/obj_par_NPC.yy",
+    "name":"obj_DialogParent",
+    "path":"objects/obj_DialogParent/obj_DialogParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprite_goblin_idle",
-    "path":"sprites/sprite_goblin_idle/sprite_goblin_idle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

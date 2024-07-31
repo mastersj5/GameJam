@@ -37,8 +37,8 @@ if(!pause and counter < global.str_len){
 		case "!": pause = true; alarm[1] = 25; break;
 	}
 }
-var substr = string_copy(global.text_wrapped, 1, counter);
+var _substr = string_copy(global.text_wrapped, 1, counter);
 
 
 c = text_col;
-draw_text_color(text_x, text_y, substr, c,c,c,c, 1);
+draw_text_color(text_x, text_y, _substr, c,c,c,c, 1);

@@ -1,3 +1,10 @@
+event_inherited();
+
+//dialog_object = obj_DialogSampleA;
+//dialog_object = obj_DialogShadowTutorial;
+dialog_object = obj_DialogSampleA_1;
+
+
 //This is my main page for all of my variables
 grav = 0.2;
 hsp = 0;
@@ -10,9 +17,11 @@ movespeed = 2;
 sprite_index = sprite_goblin_idle;
 //speed = 1;
 
+// "Speaking" dialogue variables
 portrait_index = 2; //2 = wizard goblin
 voice = snd_voice1;
 speaker_name = "Bolbo";
+/*
 text = ["*grunt*", 
 		"Hey, who are you?", 
 		"Yer, not welcome 'round here bucko.", 
@@ -21,3 +30,4 @@ text = ["*grunt*",
 		"test"
 		]; 
 speakers = [id, id, id, id, obj_player, obj_player];
+*/

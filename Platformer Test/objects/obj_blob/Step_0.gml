@@ -1,4 +1,10 @@
+
 move_wrap(true, false, 0);
+keyright = keyboard_check(ord("D"));
+keyleft = -keyboard_check(ord("A"));
+keyjump = keyboard_check_pressed(vk_space);
+keyjumplong = keyboard_check(vk_space);
+
 //Horizontal Collision Check and Movement
 if (place_meeting(x + hsp, y, obj_floor)) {
     while (!place_meeting(x + sign(hsp), y, obj_floor)) {
