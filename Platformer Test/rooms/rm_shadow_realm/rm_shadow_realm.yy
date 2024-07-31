@@ -46,6 +46,9 @@
     {"name":"inst_3101F34B","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
     {"name":"inst_1849F51C","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
     {"name":"inst_5DBCB86","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
+    {"name":"inst_7A12A995","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
+    {"name":"inst_7F2398D5","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
+    {"name":"inst_5CE2BF69","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
   ],
   "isDnd":false,
   "layers":[
