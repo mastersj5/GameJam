@@ -81,7 +81,7 @@ else if keyboard_check(ord("A"))
 	sprite_index = Player_Sprite_Walking;
 }
 //This is to start the animation for the running function.
-if keyboard_check(vk_shift) && keyboard_check(ord("D")&& !keyboard_check(ord("A")))
+if keyboard_check(vk_shift) && hsp
 {
 	image_speed = 2
     sprite_index = Player_Sprite_Running;
@@ -90,11 +90,6 @@ if keyboard_check_released(ord("D"))
 {
 	image_speed = 1;
 	sprite_index = Player_Sprite_Idle;
-}
-if keyboard_check(vk_shift) && keyboard_check(ord("A")&& !keyboard_check(ord("D")))
-{
-	image_speed = 2
-    sprite_index = Player_Sprite_Running;
 }
 if keyboard_check_released(ord("A"))
 {
@@ -144,6 +139,15 @@ if(input_interact){//collision detect if NPC is nearby
 	}
 }
 
+move_wrap(true, false, 0);
+
 // Creating movement
 move = keyleft + keyright;
 hsp = move * movespeed;
+
+//Defining health and destroying player when health is = to 0
+// Check if player's HP is 0
+if global.hp = 0
+{
+   room_goto(rm_gameover)
+}

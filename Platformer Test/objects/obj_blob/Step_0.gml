@@ -1,3 +1,4 @@
+move_wrap(true, false, 0);
 //Horizontal Collision Check and Movement
 if (place_meeting(x + hsp, y, obj_floor)) {
     while (!place_meeting(x + sign(hsp), y, obj_floor)) {
@@ -71,3 +72,19 @@ if keyboard_check(ord("D"))
 	image_xscale = 1
 }
 }
+
+//To murder creature
+var player_x = obj_wtf.x;
+var player_y = obj_wtf.y;
+
+// Calculate the distance to the player
+var distance_to_player = point_distance(x, y, obj_wtf.x, obj_wtf.y);
+
+// Check if the player is within attack range
+if (distance_to_player < attack_range) {
+    // If the attack cooldown has elapsed, attack
+    if (attack_timer <= 0) {
+		instance_destroy(obj_creature);
+        attack_timer = attack_cooldown;
+    }
+} 
