@@ -1,7 +1,7 @@
 keyright = keyboard_check(ord("D"));
 keyleft = -keyboard_check(ord("A"));
 keyjump = keyboard_check_pressed(vk_space);
-keyjumplong =keyboard_check(vk_space);
+keyjumplong = keyboard_check(vk_space);
 
 move = keyleft + keyright;
 hsp = move * movespeed;

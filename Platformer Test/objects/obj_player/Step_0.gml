@@ -132,11 +132,18 @@ if keyboard_check(ord("R"))
 //Textbox
 if(input_interact){//collision detect if NPC is nearby
 	
-	var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, par_NPC, false, false);
+	var inst = collision_rectangle(x-radius, y-radius, x+radius, y+radius, obj_par_NPC, false, false);//only interacting with objects that inherit obj_par_NPC
+	//var closest_npc = instance_nearest(x, y, obj_par_NPC); // Find nearest NPC
 	
 	if(inst != noone){
 		with(inst){//NPC runs the textbox code (dialogue with specific NPC)
-			create_textbox(text, speakers);
+			//create_textbox(text, speakers); // old dialogue functionality
+			//global.showing_dialog = true;
+			if(!global.dialog_occurring){//created in game object for ensuring only one dialog box can be created
+				global.current_dialog_obj = inst.dialog_object; // Set current dialog based on NPC
+				var dialog_inst = instance_create_layer(0, 0, "Dialog", global.current_dialog_obj);//create instance of current global dialog obj at origin in room
+				global.dialog_occurring = true;
+			}
 		}
 	}
 }
