@@ -6,3 +6,8 @@ display_set_gui_size(global.game_width, global.game_height);
 
 t = font_add("yoster.ttf", 12, false, false, 32, 128);
 draw_set_font(t);
+
+//global.current_dialog_obj = obj_DialogSampleA;
+global.current_dialog_obj = obj_DialogShadowTutorial;
+global.dialog_occurring = false;
+global.showing_dialog = false; // Initially, no dialog is showing
