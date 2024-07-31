@@ -46,9 +46,10 @@
     {"name":"inst_3101F34B","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
     {"name":"inst_1849F51C","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
     {"name":"inst_5DBCB86","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
-    {"name":"inst_7A12A995","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
-    {"name":"inst_7F2398D5","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
-    {"name":"inst_5CE2BF69","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
+    {"name":"inst_41E888F0","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
+    {"name":"inst_1E022210","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
+    {"name":"inst_4A90D524","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
+    {"name":"inst_4A4818EE","path":"rooms/rm_shadow_realm/rm_shadow_realm.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -59,6 +60,9 @@
     {"$GMRInstanceLayer":"","%Name":"Game","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_3101F34B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3101F34B","objectId":{"name":"game","path":"objects/game/game.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":8.0,"y":9.0,},
         {"$GMRInstance":"v1","%Name":"inst_5DBCB86","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DBCB86","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1227.0,"y":580.0,},
+        {"$GMRInstance":"v1","%Name":"inst_1E022210","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E022210","objectId":{"name":"obj_wtf","path":"objects/obj_wtf/obj_wtf.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":339.0,"y":749.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4A90D524","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4A90D524","objectId":{"name":"obj_creature","path":"objects/obj_creature/obj_creature.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.4821428,"scaleY":1.4821428,"x":346.75,"y":753.25,},
+        {"$GMRInstance":"v1","%Name":"inst_4A4818EE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4A4818EE","objectId":{"name":"obj_creature_parent","path":"objects/obj_creature_parent/obj_creature_parent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":378.0,"y":702.0,},
       ],"layers":[],"name":"Game","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Shadow_Debris","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_1849F51C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1849F51C","objectId":{"name":"obj_shadow_debris","path":"objects/obj_shadow_debris/obj_shadow_debris.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
