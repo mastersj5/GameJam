@@ -1,8 +1,10 @@
 {
   "FolderOrderSettings":[
     {"name":"Dialogue","order":1,"path":"folders/Objects/Meta/Dialogue.yy",},
+    {"name":"Buttons","order":2,"path":"folders/Objects/Meta/Buttons.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"game","order":1,"path":"objects/game/game.yy",},
     {"name":"obj_blob","order":1,"path":"objects/obj_blob/obj_blob.yy",},
     {"name":"obj_DialogBase","order":2,"path":"objects/obj_DialogBase/obj_DialogBase.yy",},
     {"name":"obj_DialogSampleA_1","order":4,"path":"objects/obj_DialogSampleA_1/obj_DialogSampleA_1.yy",},
@@ -10,5 +12,8 @@
     {"name":"obj_DialogShadowTutorial","order":3,"path":"objects/obj_DialogShadowTutorial/obj_DialogShadowTutorial.yy",},
     {"name":"Dialogue","order":1,"path":"scripts/Dialogue/Dialogue.yy",},
     {"name":"scr_textbox_functions","order":2,"path":"scripts/scr_textbox_functions/scr_textbox_functions.yy",},
+    {"name":"obj_camera","order":3,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"obj_shadow_debris","order":1,"path":"objects/obj_shadow_debris/obj_shadow_debris.yy",},
+    {"name":"Shadow_Debris","order":1,"path":"sprites/Shadow_Debris/Shadow_Debris.yy",},
   ],
 }
