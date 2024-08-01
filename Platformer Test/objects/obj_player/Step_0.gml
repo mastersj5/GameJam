@@ -23,6 +23,8 @@ if (vsp < 10) vsp += grav;
 if global.shadow_control
 {
 	movespeed = 0;
+	sprite_index = Player_Sprite_Idle;
+	image_speed = 1;
 }
 //This is checking if a shadow summon is in the room and creating a condition for all of the movement
 if !global.shadow_control

@@ -1,10 +1,3 @@
-
-move_wrap(true, false, 0);
-keyright = keyboard_check(ord("D"));
-keyleft = -keyboard_check(ord("A"));
-keyjump = keyboard_check_pressed(vk_space);
-keyjumplong = keyboard_check(vk_space);
-
 //Horizontal Collision Check and Movement
 if (place_meeting(x + hsp, y, obj_floor)) {
     while (!place_meeting(x + sign(hsp), y, obj_floor)) {
@@ -24,16 +17,17 @@ if (place_meeting(x, y + vsp, obj_floor)) {
     y += vsp; // Move vertically if no collision
 }
 
+
+if (vsp < 10) vsp += grav;
+
 if keyboard_check_pressed(ord("Y"))
 {
 	global.shadow_control = !global.shadow_control
 }
 
-if (vsp < 10) vsp += grav;
-
 if !global.shadow_control
 {
-	movespeed = 0;
+	hsp = 0;
 }
 //This is checking if a shadow summon is in the room and creating a condition for all of the movement
 if global.shadow_control
@@ -47,7 +41,6 @@ input_interact = keyboard_check_pressed(ord("F"));
 //Redefining movespeed when we switch back
 move = keyleft + keyright;
 hsp = move * movespeed;
-
 if keyboard_check(vk_nokey)
 {
 	movespeed = 2;
