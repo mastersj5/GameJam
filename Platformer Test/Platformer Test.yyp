@@ -182,7 +182,7 @@
     {"id":{"name":"Player_Sprite_Walking","path":"sprites/Player_Sprite_Walking/Player_Sprite_Walking.yy",},},
     {"id":{"name":"Prompts","path":"sprites/Prompts/Prompts.yy",},},
     {"id":{"name":"Quit_Button","path":"sprites/Quit_Button/Quit_Button.yy",},},
-    {"id":{"name":"Shadow_Blob","path":"sprites/Shadow_Blob/Shadow_Blob.yy",},},
+    {"id":{"name":"Shadow_Blob_Idle","path":"sprites/Shadow_Blob_Idle/Shadow_Blob_Idle.yy",},},
     {"id":{"name":"Shadow_Creature_1_Attacking","path":"sprites/Shadow_Creature_1_Attacking/Shadow_Creature_1_Attacking.yy",},},
     {"id":{"name":"Shadow_Creature_1","path":"sprites/Shadow_Creature_1/Shadow_Creature_1.yy",},},
     {"id":{"name":"Shadow_Debris","path":"sprites/Shadow_Debris/Shadow_Debris.yy",},},

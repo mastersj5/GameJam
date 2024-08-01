@@ -7,9 +7,9 @@ var distance_to_player = point_distance(x, y, obj_player.x, obj_player.y);
 // Check if the player is within attack range
 if (distance_to_player < attack_range) {
     // If the attack cooldown has elapsed, attack
-    if (attack_timer <= 0) {
-        global.hp -= 100;
-		// Call the attack script
+    if (attack_timer <= 0) 
+	{
+	   // Call the attack script
        sprite_index = Shadow_Creature_1_Attacking;
 	   image_speed = 1;
         // Reset the attack timer

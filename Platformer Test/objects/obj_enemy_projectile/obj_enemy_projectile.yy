@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Black_Kunai14",
+    "path":"sprites/Black_Kunai14/Black_Kunai14.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

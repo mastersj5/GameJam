@@ -12,10 +12,7 @@
     "name":"Beings",
     "path":"folders/Objects/Beings.yy",
   },
-  "parentObjectId":{
-    "name":"obj_player",
-    "path":"objects/obj_player/obj_player.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -39,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Shadow_Blob",
-    "path":"sprites/Shadow_Blob/Shadow_Blob.yy",
+    "name":"Shadow_Blob_Idle",
+    "path":"sprites/Shadow_Blob_Idle/Shadow_Blob_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
